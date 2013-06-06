@@ -158,7 +158,8 @@ endif
 endif
 endif
 
-CROSS_COMPILE = /usr/local/arm/4.2.2-eabi/usr/bin/arm-linux-
+CROSS_COMPILE = arm-none-eabi-
+
 export	CROSS_COMPILE
 
 # load other configuration

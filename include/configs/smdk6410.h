@@ -100,9 +100,14 @@
 #undef	CONFIG_DRIVER_CS8900	
 #define CONFIG_DRIVER_SMC911X_BASE	0x18800300
 #else
-#define CONFIG_DRIVER_CS8900	0	/* we have a CS8900 on-board */
-#define CS8900_BASE	  	0x18800300
-#define CS8900_BUS16		1 	/* the Linux driver does accesses as shorts */
+//#define CONFIG_DRIVER_CS8900	0	/* we have a CS8900 on-board */
+//#define CS8900_BASE	  	0x18800300
+//#define CS8900_BUS16		1 	/* the Linux driver does accesses as shorts */
+#define CONFIG_DRIVER_DM9000 1
+#define CONFIG_DM9000_BASE 0x18000300 //0x20000300
+#define DM9000_IO CONFIG_DM9000_BASE
+#define DM9000_DATA (CONFIG_DM9000_BASE+4)
+#define CONFIG_DM9000_USE_16BIT
 #endif
 
 /*
