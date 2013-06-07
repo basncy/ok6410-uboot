@@ -30,11 +30,11 @@
 
 /* ------------------------------------------------------------------------- */
 #define CS8900_Tacs	(0x0)	// 0clk		address set-up
-#define CS8900_Tcos	(0x4)	// 4clk		chip selection set-up
-#define CS8900_Tacc	(0xE)	// 14clk	access cycle
-#define CS8900_Tcoh	(0x1)	// 1clk		chip selection hold
-#define CS8900_Tah	(0x4)	// 4clk		address holding time
-#define CS8900_Tacp	(0x6)	// 6clk		page mode access cycle
+#define CS8900_Tcos	(0x0)	// 4clk		chip selection set-up
+#define CS8900_Tacc	(0x7)	// 14clk	access cycle
+#define CS8900_Tcoh	(0x0)	// 1clk		chip selection hold
+#define CS8900_Tah	(0x0)	// 4clk		address holding time
+#define CS8900_Tacp	(0x0)	// 6clk		page mode access cycle
 #define CS8900_PMC	(0x0)	// normal(1data)page mode configuration
 
 static inline void delay(unsigned long loops)
